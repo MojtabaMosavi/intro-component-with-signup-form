@@ -1,3 +1,3 @@
 # intro-component-with-signup-form
 intro-component with a signup-form and validation 
-![](design/active-state.png)
+![](design/desktop20%design.png)
