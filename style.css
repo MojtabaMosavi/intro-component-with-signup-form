@@ -22,6 +22,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 /* Typografy */
 .col1__title {
   width: 90%;
@@ -38,7 +43,7 @@ body {
 
 #under-button-text {
   width: 80%;
-  margin: 0 auto 3em auto;
+  margin: 0 auto 2em auto;
   font-size: 0.8rem;
   text-align: center;
   color: #000;
@@ -75,14 +80,16 @@ body {
 button {
   outline: none;
 }
-fieldset {
+
+.formContainer {
   background: #fff;
   border: none;
   border-radius: 10px;
   box-shadow: 0 6px hsl(0, 58%, 66%);
+  padding: 0.5em 0;
 }
 
-fieldset form label input {
+.formContainer form label input {
   width: 90%;
   display: block;
   padding: 1em 1.5em;
@@ -113,6 +120,7 @@ input[type="text"] {
 .two-cal {
   background: url("images/bg-intro-desktop.png") center center;
   background-color: var(--Red-);
+  height: 100vh;
 }
 
 #col__button {
@@ -150,6 +158,9 @@ input[type="text"] {
 @media screen and (max-width: 760px) {
   body {
     min-width: 375px;
+  }
+  .two-cal {
+    height: 100%;
   }
   .col1__title {
     font-size: 1.5rem;
